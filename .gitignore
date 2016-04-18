@@ -1,0 +1,17 @@
+*.pbxuser
+*.mode1v3
+*.perspectivev3
+.DS_Store
+.LSOverride
+.idea/
+xcuserdata/
+*.xccheckout
+*.xcscmblueprint
+*.gcno
+Build/
+JSDiff/bundle.js
+node_modules/
+fastlane/README.md
+fastlane/test-output
+fastlane/report.xml
+

@@ -1,0 +1,755 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		239F5D1A1CC4FC6500CED8C7 /* Onigmo.h in Headers */ = {isa = PBXBuildFile; fileRef = 239F5D191CC4FC6500CED8C7 /* Onigmo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		239F5D211CC4FC6500CED8C7 /* Onigmo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 239F5D161CC4FC6500CED8C7 /* Onigmo.framework */; };
+		239F5D321CC4FD1300CED8C7 /* OnigmoRegex.h in Headers */ = {isa = PBXBuildFile; fileRef = 239F5D301CC4FD1300CED8C7 /* OnigmoRegex.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		239F5D331CC4FD1300CED8C7 /* OnigmoRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = 239F5D311CC4FD1300CED8C7 /* OnigmoRegex.m */; };
+		239F5D351CC4FD1C00CED8C7 /* OnigmoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239F5D341CC4FD1C00CED8C7 /* OnigmoTests.swift */; };
+		239F5D401CC4FDBD00CED8C7 /* regcomp.c in Sources */ = {isa = PBXBuildFile; fileRef = 239F5D361CC4FDBD00CED8C7 /* regcomp.c */; };
+		239F5D411CC4FDBD00CED8C7 /* regenc.c in Sources */ = {isa = PBXBuildFile; fileRef = 239F5D371CC4FDBD00CED8C7 /* regenc.c */; };
+		239F5D421CC4FDBD00CED8C7 /* regerror.c in Sources */ = {isa = PBXBuildFile; fileRef = 239F5D381CC4FDBD00CED8C7 /* regerror.c */; };
+		239F5D431CC4FDBD00CED8C7 /* regexec.c in Sources */ = {isa = PBXBuildFile; fileRef = 239F5D391CC4FDBD00CED8C7 /* regexec.c */; };
+		239F5D441CC4FDBD00CED8C7 /* regext.c in Sources */ = {isa = PBXBuildFile; fileRef = 239F5D3A1CC4FDBD00CED8C7 /* regext.c */; };
+		239F5D451CC4FDBD00CED8C7 /* regparse.c in Sources */ = {isa = PBXBuildFile; fileRef = 239F5D3B1CC4FDBD00CED8C7 /* regparse.c */; };
+		239F5D461CC4FDBD00CED8C7 /* regsyntax.c in Sources */ = {isa = PBXBuildFile; fileRef = 239F5D3C1CC4FDBD00CED8C7 /* regsyntax.c */; };
+		239F5D471CC4FDBD00CED8C7 /* regtrav.c in Sources */ = {isa = PBXBuildFile; fileRef = 239F5D3D1CC4FDBD00CED8C7 /* regtrav.c */; };
+		239F5D481CC4FDBD00CED8C7 /* regversion.c in Sources */ = {isa = PBXBuildFile; fileRef = 239F5D3E1CC4FDBD00CED8C7 /* regversion.c */; };
+		239F5D491CC4FDBD00CED8C7 /* st.c in Sources */ = {isa = PBXBuildFile; fileRef = 239F5D3F1CC4FDBD00CED8C7 /* st.c */; };
+		239F5D511CC4FDE700CED8C7 /* ascii.c in Sources */ = {isa = PBXBuildFile; fileRef = 239F5D4A1CC4FDE700CED8C7 /* ascii.c */; };
+		239F5D521CC4FDE700CED8C7 /* iso8859_1.c in Sources */ = {isa = PBXBuildFile; fileRef = 239F5D4B1CC4FDE700CED8C7 /* iso8859_1.c */; };
+		239F5D531CC4FDE700CED8C7 /* utf8.c in Sources */ = {isa = PBXBuildFile; fileRef = 239F5D4C1CC4FDE700CED8C7 /* utf8.c */; };
+		239F5D541CC4FDE700CED8C7 /* utf16_be.c in Sources */ = {isa = PBXBuildFile; fileRef = 239F5D4D1CC4FDE700CED8C7 /* utf16_be.c */; };
+		239F5D551CC4FDE700CED8C7 /* utf16_le.c in Sources */ = {isa = PBXBuildFile; fileRef = 239F5D4E1CC4FDE700CED8C7 /* utf16_le.c */; };
+		239F5D561CC4FDE700CED8C7 /* utf32_be.c in Sources */ = {isa = PBXBuildFile; fileRef = 239F5D4F1CC4FDE700CED8C7 /* utf32_be.c */; };
+		239F5D571CC4FDE700CED8C7 /* utf32_le.c in Sources */ = {isa = PBXBuildFile; fileRef = 239F5D501CC4FDE700CED8C7 /* utf32_le.c */; };
+		239F5D5D1CC4FE2900CED8C7 /* oniguruma.h in Headers */ = {isa = PBXBuildFile; fileRef = 239F5D581CC4FE2900CED8C7 /* oniguruma.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		239F5D5E1CC4FE2900CED8C7 /* regenc.h in Headers */ = {isa = PBXBuildFile; fileRef = 239F5D591CC4FE2900CED8C7 /* regenc.h */; };
+		239F5D5F1CC4FE2900CED8C7 /* regint.h in Headers */ = {isa = PBXBuildFile; fileRef = 239F5D5A1CC4FE2900CED8C7 /* regint.h */; };
+		239F5D601CC4FE2900CED8C7 /* regparse.h in Headers */ = {isa = PBXBuildFile; fileRef = 239F5D5B1CC4FE2900CED8C7 /* regparse.h */; };
+		239F5D611CC4FE2900CED8C7 /* st.h in Headers */ = {isa = PBXBuildFile; fileRef = 239F5D5C1CC4FE2900CED8C7 /* st.h */; };
+		239F5D631CC4FE6C00CED8C7 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 239F5D621CC4FE6C00CED8C7 /* config.h */; };
+		239F5D691CC4FF2E00CED8C7 /* unicode.c in Sources */ = {isa = PBXBuildFile; fileRef = 239F5D681CC4FF2E00CED8C7 /* unicode.c */; };
+		239F5D871CC501C900CED8C7 /* OnigmoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239F5D341CC4FD1C00CED8C7 /* OnigmoTests.swift */; };
+		239F5D891CC5022400CED8C7 /* unicode.c in Sources */ = {isa = PBXBuildFile; fileRef = 239F5D681CC4FF2E00CED8C7 /* unicode.c */; };
+		239F5D8A1CC5022A00CED8C7 /* ascii.c in Sources */ = {isa = PBXBuildFile; fileRef = 239F5D4A1CC4FDE700CED8C7 /* ascii.c */; };
+		239F5D8B1CC5022A00CED8C7 /* iso8859_1.c in Sources */ = {isa = PBXBuildFile; fileRef = 239F5D4B1CC4FDE700CED8C7 /* iso8859_1.c */; };
+		239F5D8C1CC5022A00CED8C7 /* utf8.c in Sources */ = {isa = PBXBuildFile; fileRef = 239F5D4C1CC4FDE700CED8C7 /* utf8.c */; };
+		239F5D8D1CC5022A00CED8C7 /* utf16_be.c in Sources */ = {isa = PBXBuildFile; fileRef = 239F5D4D1CC4FDE700CED8C7 /* utf16_be.c */; };
+		239F5D8E1CC5022A00CED8C7 /* utf16_le.c in Sources */ = {isa = PBXBuildFile; fileRef = 239F5D4E1CC4FDE700CED8C7 /* utf16_le.c */; };
+		239F5D8F1CC5022A00CED8C7 /* utf32_be.c in Sources */ = {isa = PBXBuildFile; fileRef = 239F5D4F1CC4FDE700CED8C7 /* utf32_be.c */; };
+		239F5D901CC5022A00CED8C7 /* utf32_le.c in Sources */ = {isa = PBXBuildFile; fileRef = 239F5D501CC4FDE700CED8C7 /* utf32_le.c */; };
+		239F5D911CC5022A00CED8C7 /* regcomp.c in Sources */ = {isa = PBXBuildFile; fileRef = 239F5D361CC4FDBD00CED8C7 /* regcomp.c */; };
+		239F5D921CC5022A00CED8C7 /* regenc.c in Sources */ = {isa = PBXBuildFile; fileRef = 239F5D371CC4FDBD00CED8C7 /* regenc.c */; };
+		239F5D931CC5022A00CED8C7 /* regerror.c in Sources */ = {isa = PBXBuildFile; fileRef = 239F5D381CC4FDBD00CED8C7 /* regerror.c */; };
+		239F5D941CC5022A00CED8C7 /* regexec.c in Sources */ = {isa = PBXBuildFile; fileRef = 239F5D391CC4FDBD00CED8C7 /* regexec.c */; };
+		239F5D951CC5022A00CED8C7 /* regext.c in Sources */ = {isa = PBXBuildFile; fileRef = 239F5D3A1CC4FDBD00CED8C7 /* regext.c */; };
+		239F5D961CC5022A00CED8C7 /* regparse.c in Sources */ = {isa = PBXBuildFile; fileRef = 239F5D3B1CC4FDBD00CED8C7 /* regparse.c */; };
+		239F5D971CC5022A00CED8C7 /* regsyntax.c in Sources */ = {isa = PBXBuildFile; fileRef = 239F5D3C1CC4FDBD00CED8C7 /* regsyntax.c */; };
+		239F5D981CC5022A00CED8C7 /* regtrav.c in Sources */ = {isa = PBXBuildFile; fileRef = 239F5D3D1CC4FDBD00CED8C7 /* regtrav.c */; };
+		239F5D991CC5022A00CED8C7 /* regversion.c in Sources */ = {isa = PBXBuildFile; fileRef = 239F5D3E1CC4FDBD00CED8C7 /* regversion.c */; };
+		239F5D9A1CC5022A00CED8C7 /* st.c in Sources */ = {isa = PBXBuildFile; fileRef = 239F5D3F1CC4FDBD00CED8C7 /* st.c */; };
+		239F5D9B1CC5022F00CED8C7 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 239F5D621CC4FE6C00CED8C7 /* config.h */; };
+		239F5D9C1CC5023200CED8C7 /* oniguruma.h in Headers */ = {isa = PBXBuildFile; fileRef = 239F5D581CC4FE2900CED8C7 /* oniguruma.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		239F5D9D1CC5023700CED8C7 /* regenc.h in Headers */ = {isa = PBXBuildFile; fileRef = 239F5D591CC4FE2900CED8C7 /* regenc.h */; };
+		239F5D9E1CC5023A00CED8C7 /* regint.h in Headers */ = {isa = PBXBuildFile; fileRef = 239F5D5A1CC4FE2900CED8C7 /* regint.h */; };
+		239F5D9F1CC5023E00CED8C7 /* regparse.h in Headers */ = {isa = PBXBuildFile; fileRef = 239F5D5B1CC4FE2900CED8C7 /* regparse.h */; };
+		239F5DA01CC5024100CED8C7 /* st.h in Headers */ = {isa = PBXBuildFile; fileRef = 239F5D5C1CC4FE2900CED8C7 /* st.h */; };
+		239F5DA11CC5028500CED8C7 /* Onigmo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 239F5D701CC5013B00CED8C7 /* Onigmo.framework */; };
+		239F5DA21CC502E100CED8C7 /* Onigmo.h in Headers */ = {isa = PBXBuildFile; fileRef = 239F5D191CC4FC6500CED8C7 /* Onigmo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		239F5DA31CC502EC00CED8C7 /* OnigmoRegex.h in Headers */ = {isa = PBXBuildFile; fileRef = 239F5D301CC4FD1300CED8C7 /* OnigmoRegex.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		239F5DA41CC5031900CED8C7 /* OnigmoRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = 239F5D311CC4FD1300CED8C7 /* OnigmoRegex.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		239F5D221CC4FC6500CED8C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 239F5D0D1CC4FC6500CED8C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 239F5D151CC4FC6500CED8C7;
+			remoteInfo = Onigmo;
+		};
+		239F5D7B1CC5013C00CED8C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 239F5D0D1CC4FC6500CED8C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 239F5D6F1CC5013B00CED8C7;
+			remoteInfo = "Onigmo-tvOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		239F5D161CC4FC6500CED8C7 /* Onigmo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Onigmo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		239F5D191CC4FC6500CED8C7 /* Onigmo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Onigmo.h; sourceTree = "<group>"; };
+		239F5D1B1CC4FC6500CED8C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		239F5D201CC4FC6500CED8C7 /* OnigmoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnigmoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		239F5D271CC4FC6500CED8C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		239F5D301CC4FD1300CED8C7 /* OnigmoRegex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnigmoRegex.h; sourceTree = "<group>"; };
+		239F5D311CC4FD1300CED8C7 /* OnigmoRegex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnigmoRegex.m; sourceTree = "<group>"; };
+		239F5D341CC4FD1C00CED8C7 /* OnigmoTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnigmoTests.swift; sourceTree = "<group>"; };
+		239F5D361CC4FDBD00CED8C7 /* regcomp.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = regcomp.c; path = Carthage/Checkouts/Onigmo/regcomp.c; sourceTree = "<group>"; };
+		239F5D371CC4FDBD00CED8C7 /* regenc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = regenc.c; path = Carthage/Checkouts/Onigmo/regenc.c; sourceTree = "<group>"; };
+		239F5D381CC4FDBD00CED8C7 /* regerror.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = regerror.c; path = Carthage/Checkouts/Onigmo/regerror.c; sourceTree = "<group>"; };
+		239F5D391CC4FDBD00CED8C7 /* regexec.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = regexec.c; path = Carthage/Checkouts/Onigmo/regexec.c; sourceTree = "<group>"; };
+		239F5D3A1CC4FDBD00CED8C7 /* regext.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = regext.c; path = Carthage/Checkouts/Onigmo/regext.c; sourceTree = "<group>"; };
+		239F5D3B1CC4FDBD00CED8C7 /* regparse.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = regparse.c; path = Carthage/Checkouts/Onigmo/regparse.c; sourceTree = "<group>"; };
+		239F5D3C1CC4FDBD00CED8C7 /* regsyntax.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = regsyntax.c; path = Carthage/Checkouts/Onigmo/regsyntax.c; sourceTree = "<group>"; };
+		239F5D3D1CC4FDBD00CED8C7 /* regtrav.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = regtrav.c; path = Carthage/Checkouts/Onigmo/regtrav.c; sourceTree = "<group>"; };
+		239F5D3E1CC4FDBD00CED8C7 /* regversion.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = regversion.c; path = Carthage/Checkouts/Onigmo/regversion.c; sourceTree = "<group>"; };
+		239F5D3F1CC4FDBD00CED8C7 /* st.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = st.c; path = Carthage/Checkouts/Onigmo/st.c; sourceTree = "<group>"; };
+		239F5D4A1CC4FDE700CED8C7 /* ascii.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = ascii.c; path = Carthage/Checkouts/Onigmo/enc/ascii.c; sourceTree = "<group>"; };
+		239F5D4B1CC4FDE700CED8C7 /* iso8859_1.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = iso8859_1.c; path = Carthage/Checkouts/Onigmo/enc/iso8859_1.c; sourceTree = "<group>"; };
+		239F5D4C1CC4FDE700CED8C7 /* utf8.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = utf8.c; path = Carthage/Checkouts/Onigmo/enc/utf8.c; sourceTree = "<group>"; };
+		239F5D4D1CC4FDE700CED8C7 /* utf16_be.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = utf16_be.c; path = Carthage/Checkouts/Onigmo/enc/utf16_be.c; sourceTree = "<group>"; };
+		239F5D4E1CC4FDE700CED8C7 /* utf16_le.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = utf16_le.c; path = Carthage/Checkouts/Onigmo/enc/utf16_le.c; sourceTree = "<group>"; };
+		239F5D4F1CC4FDE700CED8C7 /* utf32_be.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = utf32_be.c; path = Carthage/Checkouts/Onigmo/enc/utf32_be.c; sourceTree = "<group>"; };
+		239F5D501CC4FDE700CED8C7 /* utf32_le.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = utf32_le.c; path = Carthage/Checkouts/Onigmo/enc/utf32_le.c; sourceTree = "<group>"; };
+		239F5D581CC4FE2900CED8C7 /* oniguruma.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = oniguruma.h; path = Carthage/Checkouts/Onigmo/oniguruma.h; sourceTree = "<group>"; };
+		239F5D591CC4FE2900CED8C7 /* regenc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = regenc.h; path = Carthage/Checkouts/Onigmo/regenc.h; sourceTree = "<group>"; };
+		239F5D5A1CC4FE2900CED8C7 /* regint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = regint.h; path = Carthage/Checkouts/Onigmo/regint.h; sourceTree = "<group>"; };
+		239F5D5B1CC4FE2900CED8C7 /* regparse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = regparse.h; path = Carthage/Checkouts/Onigmo/regparse.h; sourceTree = "<group>"; };
+		239F5D5C1CC4FE2900CED8C7 /* st.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = st.h; path = Carthage/Checkouts/Onigmo/st.h; sourceTree = "<group>"; };
+		239F5D621CC4FE6C00CED8C7 /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = config.h; path = Carthage/Checkouts/Onigmo/config.h; sourceTree = "<group>"; };
+		239F5D681CC4FF2E00CED8C7 /* unicode.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = unicode.c; path = Carthage/Checkouts/Onigmo/enc/unicode.c; sourceTree = "<group>"; };
+		239F5D701CC5013B00CED8C7 /* Onigmo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Onigmo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		239F5D791CC5013C00CED8C7 /* Onigmo-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Onigmo-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		239F5D121CC4FC6500CED8C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		239F5D1D1CC4FC6500CED8C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				239F5D211CC4FC6500CED8C7 /* Onigmo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		239F5D6C1CC5013B00CED8C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		239F5D761CC5013C00CED8C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				239F5DA11CC5028500CED8C7 /* Onigmo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		239F5D0C1CC4FC6500CED8C7 = {
+			isa = PBXGroup;
+			children = (
+				239F5D6A1CC4FFA300CED8C7 /* onigmo */,
+				239F5D181CC4FC6500CED8C7 /* Onigmo */,
+				239F5D241CC4FC6500CED8C7 /* OnigmoTests */,
+				239F5D171CC4FC6500CED8C7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		239F5D171CC4FC6500CED8C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				239F5D161CC4FC6500CED8C7 /* Onigmo.framework */,
+				239F5D201CC4FC6500CED8C7 /* OnigmoTests.xctest */,
+				239F5D701CC5013B00CED8C7 /* Onigmo.framework */,
+				239F5D791CC5013C00CED8C7 /* Onigmo-tvOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		239F5D181CC4FC6500CED8C7 /* Onigmo */ = {
+			isa = PBXGroup;
+			children = (
+				239F5D191CC4FC6500CED8C7 /* Onigmo.h */,
+				239F5D301CC4FD1300CED8C7 /* OnigmoRegex.h */,
+				239F5D311CC4FD1300CED8C7 /* OnigmoRegex.m */,
+				239F5D1B1CC4FC6500CED8C7 /* Info.plist */,
+			);
+			path = Onigmo;
+			sourceTree = "<group>";
+		};
+		239F5D241CC4FC6500CED8C7 /* OnigmoTests */ = {
+			isa = PBXGroup;
+			children = (
+				239F5D341CC4FD1C00CED8C7 /* OnigmoTests.swift */,
+				239F5D271CC4FC6500CED8C7 /* Info.plist */,
+			);
+			path = OnigmoTests;
+			sourceTree = "<group>";
+		};
+		239F5D6A1CC4FFA300CED8C7 /* onigmo */ = {
+			isa = PBXGroup;
+			children = (
+				239F5D681CC4FF2E00CED8C7 /* unicode.c */,
+				239F5D621CC4FE6C00CED8C7 /* config.h */,
+				239F5D581CC4FE2900CED8C7 /* oniguruma.h */,
+				239F5D591CC4FE2900CED8C7 /* regenc.h */,
+				239F5D5A1CC4FE2900CED8C7 /* regint.h */,
+				239F5D5B1CC4FE2900CED8C7 /* regparse.h */,
+				239F5D5C1CC4FE2900CED8C7 /* st.h */,
+				239F5D4A1CC4FDE700CED8C7 /* ascii.c */,
+				239F5D4B1CC4FDE700CED8C7 /* iso8859_1.c */,
+				239F5D4C1CC4FDE700CED8C7 /* utf8.c */,
+				239F5D4D1CC4FDE700CED8C7 /* utf16_be.c */,
+				239F5D4E1CC4FDE700CED8C7 /* utf16_le.c */,
+				239F5D4F1CC4FDE700CED8C7 /* utf32_be.c */,
+				239F5D501CC4FDE700CED8C7 /* utf32_le.c */,
+				239F5D361CC4FDBD00CED8C7 /* regcomp.c */,
+				239F5D371CC4FDBD00CED8C7 /* regenc.c */,
+				239F5D381CC4FDBD00CED8C7 /* regerror.c */,
+				239F5D391CC4FDBD00CED8C7 /* regexec.c */,
+				239F5D3A1CC4FDBD00CED8C7 /* regext.c */,
+				239F5D3B1CC4FDBD00CED8C7 /* regparse.c */,
+				239F5D3C1CC4FDBD00CED8C7 /* regsyntax.c */,
+				239F5D3D1CC4FDBD00CED8C7 /* regtrav.c */,
+				239F5D3E1CC4FDBD00CED8C7 /* regversion.c */,
+				239F5D3F1CC4FDBD00CED8C7 /* st.c */,
+			);
+			name = onigmo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		239F5D131CC4FC6500CED8C7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				239F5D1A1CC4FC6500CED8C7 /* Onigmo.h in Headers */,
+				239F5D5D1CC4FE2900CED8C7 /* oniguruma.h in Headers */,
+				239F5D321CC4FD1300CED8C7 /* OnigmoRegex.h in Headers */,
+				239F5D631CC4FE6C00CED8C7 /* config.h in Headers */,
+				239F5D611CC4FE2900CED8C7 /* st.h in Headers */,
+				239F5D5E1CC4FE2900CED8C7 /* regenc.h in Headers */,
+				239F5D5F1CC4FE2900CED8C7 /* regint.h in Headers */,
+				239F5D601CC4FE2900CED8C7 /* regparse.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		239F5D6D1CC5013B00CED8C7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				239F5D9C1CC5023200CED8C7 /* oniguruma.h in Headers */,
+				239F5DA21CC502E100CED8C7 /* Onigmo.h in Headers */,
+				239F5DA01CC5024100CED8C7 /* st.h in Headers */,
+				239F5D9B1CC5022F00CED8C7 /* config.h in Headers */,
+				239F5D9D1CC5023700CED8C7 /* regenc.h in Headers */,
+				239F5D9E1CC5023A00CED8C7 /* regint.h in Headers */,
+				239F5D9F1CC5023E00CED8C7 /* regparse.h in Headers */,
+				239F5DA31CC502EC00CED8C7 /* OnigmoRegex.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		239F5D151CC4FC6500CED8C7 /* Onigmo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 239F5D2A1CC4FC6500CED8C7 /* Build configuration list for PBXNativeTarget "Onigmo" */;
+			buildPhases = (
+				239F5D111CC4FC6500CED8C7 /* Sources */,
+				239F5D121CC4FC6500CED8C7 /* Frameworks */,
+				239F5D131CC4FC6500CED8C7 /* Headers */,
+				239F5D141CC4FC6500CED8C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Onigmo;
+			productName = Onigmo;
+			productReference = 239F5D161CC4FC6500CED8C7 /* Onigmo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		239F5D1F1CC4FC6500CED8C7 /* OnigmoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 239F5D2D1CC4FC6500CED8C7 /* Build configuration list for PBXNativeTarget "OnigmoTests" */;
+			buildPhases = (
+				239F5D1C1CC4FC6500CED8C7 /* Sources */,
+				239F5D1D1CC4FC6500CED8C7 /* Frameworks */,
+				239F5D1E1CC4FC6500CED8C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				239F5D231CC4FC6500CED8C7 /* PBXTargetDependency */,
+			);
+			name = OnigmoTests;
+			productName = OnigmoTests;
+			productReference = 239F5D201CC4FC6500CED8C7 /* OnigmoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		239F5D6F1CC5013B00CED8C7 /* Onigmo-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 239F5D811CC5013C00CED8C7 /* Build configuration list for PBXNativeTarget "Onigmo-tvOS" */;
+			buildPhases = (
+				239F5D6B1CC5013B00CED8C7 /* Sources */,
+				239F5D6C1CC5013B00CED8C7 /* Frameworks */,
+				239F5D6D1CC5013B00CED8C7 /* Headers */,
+				239F5D6E1CC5013B00CED8C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Onigmo-tvOS";
+			productName = "Onigmo-tvOS";
+			productReference = 239F5D701CC5013B00CED8C7 /* Onigmo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		239F5D781CC5013C00CED8C7 /* Onigmo-tvOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 239F5D841CC5013C00CED8C7 /* Build configuration list for PBXNativeTarget "Onigmo-tvOSTests" */;
+			buildPhases = (
+				239F5D751CC5013C00CED8C7 /* Sources */,
+				239F5D761CC5013C00CED8C7 /* Frameworks */,
+				239F5D771CC5013C00CED8C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				239F5D7C1CC5013C00CED8C7 /* PBXTargetDependency */,
+			);
+			name = "Onigmo-tvOSTests";
+			productName = "Onigmo-tvOSTests";
+			productReference = 239F5D791CC5013C00CED8C7 /* Onigmo-tvOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		239F5D0D1CC4FC6500CED8C7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "nerdish by nature";
+				TargetAttributes = {
+					239F5D151CC4FC6500CED8C7 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					239F5D1F1CC4FC6500CED8C7 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					239F5D6F1CC5013B00CED8C7 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					239F5D781CC5013C00CED8C7 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 239F5D101CC4FC6500CED8C7 /* Build configuration list for PBXProject "Onigmo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 239F5D0C1CC4FC6500CED8C7;
+			productRefGroup = 239F5D171CC4FC6500CED8C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				239F5D151CC4FC6500CED8C7 /* Onigmo */,
+				239F5D1F1CC4FC6500CED8C7 /* OnigmoTests */,
+				239F5D6F1CC5013B00CED8C7 /* Onigmo-tvOS */,
+				239F5D781CC5013C00CED8C7 /* Onigmo-tvOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		239F5D141CC4FC6500CED8C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		239F5D1E1CC4FC6500CED8C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		239F5D6E1CC5013B00CED8C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		239F5D771CC5013C00CED8C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		239F5D111CC4FC6500CED8C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				239F5D691CC4FF2E00CED8C7 /* unicode.c in Sources */,
+				239F5D511CC4FDE700CED8C7 /* ascii.c in Sources */,
+				239F5D521CC4FDE700CED8C7 /* iso8859_1.c in Sources */,
+				239F5D531CC4FDE700CED8C7 /* utf8.c in Sources */,
+				239F5D541CC4FDE700CED8C7 /* utf16_be.c in Sources */,
+				239F5D551CC4FDE700CED8C7 /* utf16_le.c in Sources */,
+				239F5D561CC4FDE700CED8C7 /* utf32_be.c in Sources */,
+				239F5D571CC4FDE700CED8C7 /* utf32_le.c in Sources */,
+				239F5D401CC4FDBD00CED8C7 /* regcomp.c in Sources */,
+				239F5D411CC4FDBD00CED8C7 /* regenc.c in Sources */,
+				239F5D421CC4FDBD00CED8C7 /* regerror.c in Sources */,
+				239F5D431CC4FDBD00CED8C7 /* regexec.c in Sources */,
+				239F5D441CC4FDBD00CED8C7 /* regext.c in Sources */,
+				239F5D451CC4FDBD00CED8C7 /* regparse.c in Sources */,
+				239F5D461CC4FDBD00CED8C7 /* regsyntax.c in Sources */,
+				239F5D471CC4FDBD00CED8C7 /* regtrav.c in Sources */,
+				239F5D481CC4FDBD00CED8C7 /* regversion.c in Sources */,
+				239F5D491CC4FDBD00CED8C7 /* st.c in Sources */,
+				239F5D331CC4FD1300CED8C7 /* OnigmoRegex.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		239F5D1C1CC4FC6500CED8C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				239F5D351CC4FD1C00CED8C7 /* OnigmoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		239F5D6B1CC5013B00CED8C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				239F5DA41CC5031900CED8C7 /* OnigmoRegex.m in Sources */,
+				239F5D9A1CC5022A00CED8C7 /* st.c in Sources */,
+				239F5D971CC5022A00CED8C7 /* regsyntax.c in Sources */,
+				239F5D891CC5022400CED8C7 /* unicode.c in Sources */,
+				239F5D941CC5022A00CED8C7 /* regexec.c in Sources */,
+				239F5D911CC5022A00CED8C7 /* regcomp.c in Sources */,
+				239F5D8A1CC5022A00CED8C7 /* ascii.c in Sources */,
+				239F5D981CC5022A00CED8C7 /* regtrav.c in Sources */,
+				239F5D991CC5022A00CED8C7 /* regversion.c in Sources */,
+				239F5D8C1CC5022A00CED8C7 /* utf8.c in Sources */,
+				239F5D8E1CC5022A00CED8C7 /* utf16_le.c in Sources */,
+				239F5D961CC5022A00CED8C7 /* regparse.c in Sources */,
+				239F5D8D1CC5022A00CED8C7 /* utf16_be.c in Sources */,
+				239F5D8F1CC5022A00CED8C7 /* utf32_be.c in Sources */,
+				239F5D951CC5022A00CED8C7 /* regext.c in Sources */,
+				239F5D921CC5022A00CED8C7 /* regenc.c in Sources */,
+				239F5D8B1CC5022A00CED8C7 /* iso8859_1.c in Sources */,
+				239F5D931CC5022A00CED8C7 /* regerror.c in Sources */,
+				239F5D901CC5022A00CED8C7 /* utf32_le.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		239F5D751CC5013C00CED8C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				239F5D871CC501C900CED8C7 /* OnigmoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		239F5D231CC4FC6500CED8C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 239F5D151CC4FC6500CED8C7 /* Onigmo */;
+			targetProxy = 239F5D221CC4FC6500CED8C7 /* PBXContainerItemProxy */;
+		};
+		239F5D7C1CC5013C00CED8C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 239F5D6F1CC5013B00CED8C7 /* Onigmo-tvOS */;
+			targetProxy = 239F5D7B1CC5013C00CED8C7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		239F5D281CC4FC6500CED8C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Onigmo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nerdishbynature.Onigmo;
+				PRODUCT_MODULE_NAME = Onigmo;
+				PRODUCT_NAME = Onigmo;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		239F5D291CC4FC6500CED8C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Onigmo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nerdishbynature.Onigmo;
+				PRODUCT_MODULE_NAME = Onigmo;
+				PRODUCT_NAME = Onigmo;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		239F5D2B1CC4FC6500CED8C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		239F5D2C1CC4FC6500CED8C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		239F5D2E1CC4FC6500CED8C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = OnigmoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nerdishbynature.OnigmoTests;
+				PRODUCT_MODULE_NAME = OnigmoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		239F5D2F1CC4FC6500CED8C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = OnigmoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nerdishbynature.OnigmoTests;
+				PRODUCT_MODULE_NAME = OnigmoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		239F5D821CC5013C00CED8C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		239F5D831CC5013C00CED8C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		239F5D851CC5013C00CED8C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = OnigmoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nerdishbynature.OnigmoTests;
+				PRODUCT_MODULE_NAME = OnigmoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Debug;
+		};
+		239F5D861CC5013C00CED8C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = OnigmoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nerdishbynature.OnigmoTests;
+				PRODUCT_MODULE_NAME = OnigmoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		239F5D101CC4FC6500CED8C7 /* Build configuration list for PBXProject "Onigmo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				239F5D281CC4FC6500CED8C7 /* Debug */,
+				239F5D291CC4FC6500CED8C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		239F5D2A1CC4FC6500CED8C7 /* Build configuration list for PBXNativeTarget "Onigmo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				239F5D2B1CC4FC6500CED8C7 /* Debug */,
+				239F5D2C1CC4FC6500CED8C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		239F5D2D1CC4FC6500CED8C7 /* Build configuration list for PBXNativeTarget "OnigmoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				239F5D2E1CC4FC6500CED8C7 /* Debug */,
+				239F5D2F1CC4FC6500CED8C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		239F5D811CC5013C00CED8C7 /* Build configuration list for PBXNativeTarget "Onigmo-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				239F5D821CC5013C00CED8C7 /* Debug */,
+				239F5D831CC5013C00CED8C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		239F5D841CC5013C00CED8C7 /* Build configuration list for PBXNativeTarget "Onigmo-tvOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				239F5D851CC5013C00CED8C7 /* Debug */,
+				239F5D861CC5013C00CED8C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 239F5D0D1CC4FC6500CED8C7 /* Project object */;
+}
