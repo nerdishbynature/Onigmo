@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "239F5D6F1CC5013B00CED8C7"
-               BuildableName = "Onigmo-tvOS.framework"
+               BuildableName = "Onigmo.framework"
                BlueprintName = "Onigmo-tvOS"
                ReferencedContainer = "container:Onigmo.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "239F5D6F1CC5013B00CED8C7"
-            BuildableName = "Onigmo-tvOS.framework"
+            BuildableName = "Onigmo.framework"
             BlueprintName = "Onigmo-tvOS"
             ReferencedContainer = "container:Onigmo.xcodeproj">
          </BuildableReference>
@@ -65,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "239F5D6F1CC5013B00CED8C7"
-            BuildableName = "Onigmo-tvOS.framework"
+            BuildableName = "Onigmo.framework"
             BlueprintName = "Onigmo-tvOS"
             ReferencedContainer = "container:Onigmo.xcodeproj">
          </BuildableReference>
@@ -83,7 +83,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "239F5D6F1CC5013B00CED8C7"
-            BuildableName = "Onigmo-tvOS.framework"
+            BuildableName = "Onigmo.framework"
             BlueprintName = "Onigmo-tvOS"
             ReferencedContainer = "container:Onigmo.xcodeproj">
          </BuildableReference>
