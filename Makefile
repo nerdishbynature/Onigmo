@@ -2,10 +2,10 @@ SHA=$(shell git rev-parse HEAD)
 BRANCH=$(shell git name-rev --name-only HEAD)
 
 install:
+	cd Carthage/Checkouts/Onigmo && ./configure
 	gem install slather fastlane
 
 test:
-	cd Carthage/Checkouts/Onigmo && ./configure
 	fastlane code_coverage configuration:Debug --env default
 
 post_coverage:
