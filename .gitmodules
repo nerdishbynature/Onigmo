@@ -1,0 +1,2 @@
+[submodule "Carthage/Checkouts/Onigmo"]
+	url = https://github.com/k-takata/Onigmo.git
