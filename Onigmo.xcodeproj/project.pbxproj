@@ -65,6 +65,10 @@
 		239F5DA21CC502E100CED8C7 /* Onigmo.h in Headers */ = {isa = PBXBuildFile; fileRef = 239F5D191CC4FC6500CED8C7 /* Onigmo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		239F5DA31CC502EC00CED8C7 /* OnigmoRegex.h in Headers */ = {isa = PBXBuildFile; fileRef = 239F5D301CC4FD1300CED8C7 /* OnigmoRegex.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		239F5DA41CC5031900CED8C7 /* OnigmoRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = 239F5D311CC4FD1300CED8C7 /* OnigmoRegex.m */; };
+		239F5DAA1CC5B60500CED8C7 /* NSError+OnigmoError.h in Headers */ = {isa = PBXBuildFile; fileRef = 239F5DA81CC5B60500CED8C7 /* NSError+OnigmoError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		239F5DAB1CC5B60500CED8C7 /* NSError+OnigmoError.h in Headers */ = {isa = PBXBuildFile; fileRef = 239F5DA81CC5B60500CED8C7 /* NSError+OnigmoError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		239F5DAC1CC5B60500CED8C7 /* NSError+OnigmoError.m in Sources */ = {isa = PBXBuildFile; fileRef = 239F5DA91CC5B60500CED8C7 /* NSError+OnigmoError.m */; };
+		239F5DAD1CC5B60500CED8C7 /* NSError+OnigmoError.m in Sources */ = {isa = PBXBuildFile; fileRef = 239F5DA91CC5B60500CED8C7 /* NSError+OnigmoError.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +123,8 @@
 		239F5D681CC4FF2E00CED8C7 /* unicode.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = unicode.c; path = Carthage/Checkouts/Onigmo/enc/unicode.c; sourceTree = "<group>"; };
 		239F5D701CC5013B00CED8C7 /* Onigmo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Onigmo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		239F5D791CC5013C00CED8C7 /* Onigmo-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Onigmo-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		239F5DA81CC5B60500CED8C7 /* NSError+OnigmoError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+OnigmoError.h"; sourceTree = "<group>"; };
+		239F5DA91CC5B60500CED8C7 /* NSError+OnigmoError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+OnigmoError.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +188,8 @@
 				239F5D191CC4FC6500CED8C7 /* Onigmo.h */,
 				239F5D301CC4FD1300CED8C7 /* OnigmoRegex.h */,
 				239F5D311CC4FD1300CED8C7 /* OnigmoRegex.m */,
+				239F5DA81CC5B60500CED8C7 /* NSError+OnigmoError.h */,
+				239F5DA91CC5B60500CED8C7 /* NSError+OnigmoError.m */,
 				239F5D1B1CC4FC6500CED8C7 /* Info.plist */,
 			);
 			path = Onigmo;
@@ -234,6 +242,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				239F5DAA1CC5B60500CED8C7 /* NSError+OnigmoError.h in Headers */,
 				239F5D1A1CC4FC6500CED8C7 /* Onigmo.h in Headers */,
 				239F5D5D1CC4FE2900CED8C7 /* oniguruma.h in Headers */,
 				239F5D321CC4FD1300CED8C7 /* OnigmoRegex.h in Headers */,
@@ -249,6 +258,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				239F5DAB1CC5B60500CED8C7 /* NSError+OnigmoError.h in Headers */,
 				239F5D9C1CC5023200CED8C7 /* oniguruma.h in Headers */,
 				239F5DA21CC502E100CED8C7 /* Onigmo.h in Headers */,
 				239F5DA01CC5024100CED8C7 /* st.h in Headers */,
@@ -423,6 +433,7 @@
 				239F5D561CC4FDE700CED8C7 /* utf32_be.c in Sources */,
 				239F5D571CC4FDE700CED8C7 /* utf32_le.c in Sources */,
 				239F5D401CC4FDBD00CED8C7 /* regcomp.c in Sources */,
+				239F5DAC1CC5B60500CED8C7 /* NSError+OnigmoError.m in Sources */,
 				239F5D411CC4FDBD00CED8C7 /* regenc.c in Sources */,
 				239F5D421CC4FDBD00CED8C7 /* regerror.c in Sources */,
 				239F5D431CC4FDBD00CED8C7 /* regexec.c in Sources */,
@@ -457,6 +468,7 @@
 				239F5D8A1CC5022A00CED8C7 /* ascii.c in Sources */,
 				239F5D981CC5022A00CED8C7 /* regtrav.c in Sources */,
 				239F5D991CC5022A00CED8C7 /* regversion.c in Sources */,
+				239F5DAD1CC5B60500CED8C7 /* NSError+OnigmoError.m in Sources */,
 				239F5D8C1CC5022A00CED8C7 /* utf8.c in Sources */,
 				239F5D8E1CC5022A00CED8C7 /* utf16_le.c in Sources */,
 				239F5D961CC5022A00CED8C7 /* regparse.c in Sources */,

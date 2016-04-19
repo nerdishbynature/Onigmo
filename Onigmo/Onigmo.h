@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "oniguruma.h"
 #import <Onigmo/OnigmoRegex.h>
+#import <Onigmo/NSError+OnigmoError.h>
 
 FOUNDATION_EXPORT double OnigmoVersionNumber;
 FOUNDATION_EXPORT const unsigned char OnigmoVersionString[];

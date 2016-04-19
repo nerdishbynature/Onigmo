@@ -3,8 +3,6 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-extern NSString *const OnigmoErrorDomain;
-
 typedef NS_OPTIONS(NSUInteger, OnigmoRegularExpressionOptions) {
     OnigmoOptionDefault = ONIG_OPTION_NONE,
     OnigmoOptionIgnoreCase = ONIG_OPTION_IGNORECASE,

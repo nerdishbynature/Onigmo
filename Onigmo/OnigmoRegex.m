@@ -7,9 +7,8 @@
 //
 
 #import "OnigmoRegex.h"
+#import "NSError+OnigmoError.h"
 #import "oniguruma.h"
-
-NSString *const OnigmoErrorDomain = @"OnigmoErrorDomain";
 
 @interface OnigmoRegularExpression ()
 @property (nonatomic, nonnull) regex_t *reg;
@@ -24,15 +23,12 @@ NSString *const OnigmoErrorDomain = @"OnigmoErrorDomain";
 - (instancetype)initWithPattern:(NSString *)pattern options:(OnigmoRegularExpressionOptions)options error:(NSError * _Nullable __autoreleasing *)error {
     self = [super init];
     if (self) {
-        int r;
         OnigErrorInfo einfo;
         const UChar *cPattern = (UChar* )[pattern cStringUsingEncoding:NSUTF8StringEncoding];
 
-        int success = onig_new(&_reg, cPattern, cPattern + strlen((char *)cPattern), options, ONIG_ENCODING_ASCII, ONIG_SYNTAX_DEFAULT, &einfo);
+        int success = onig_new(&_reg, cPattern, cPattern + strlen((char *)cPattern), options, ONIG_ENCODING_UTF8, ONIG_SYNTAX_DEFAULT, &einfo);
         if (success != ONIG_NORMAL) {
-            char s[ONIG_MAX_ERROR_MESSAGE_LEN];
-            onig_error_code_to_str((OnigUChar *)s, r, &einfo);
-            *error = [NSError errorWithDomain:OnigmoErrorDomain code:r userInfo:@{NSLocalizedDescriptionKey: [NSString stringWithCString:s encoding:NSUTF8StringEncoding]}];
+            *error = [NSError onigmo_errorWithCode:success];
             return nil;
         }
     }
@@ -59,9 +55,7 @@ NSString *const OnigmoErrorDomain = @"OnigmoErrorDomain";
     } else if (r == ONIG_MISMATCH) {
         return nil;
     } else { /* error */
-        char s[ONIG_MAX_ERROR_MESSAGE_LEN];
-        onig_error_code_to_str((unsigned char *)s, r);
-        *error = [NSError errorWithDomain:OnigmoErrorDomain code:r userInfo:@{NSLocalizedDescriptionKey: [NSString stringWithCString:s encoding:NSUTF8StringEncoding]}];
+        *error = [NSError onigmo_errorWithCode:r];
         return nil;
     }
 

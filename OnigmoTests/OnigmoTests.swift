@@ -14,4 +14,14 @@ class OnigmoTests: XCTestCase {
             XCTAssertNil(error)
         }
     }
+
+    func testThrowsAnErrorWhenInvalidRegex() {
+        do {
+            let regex = try OnigmoRegularExpression(pattern: "^\\1$", options: .Default)
+            XCTAssertNil(regex)
+        } catch {
+            XCTAssertEqual((error as NSError).code, -208)
+            XCTAssertEqual((error as NSError).localizedDescription, "invalid backref number/name")
+        }
+    }
 }
