@@ -26,7 +26,7 @@
         OnigErrorInfo einfo;
         const UChar *cPattern = (UChar* )[pattern cStringUsingEncoding:NSUTF8StringEncoding];
 
-        int success = onig_new(&_reg, cPattern, cPattern + strlen((char *)cPattern), options, ONIG_ENCODING_UTF8, ONIG_SYNTAX_DEFAULT, &einfo);
+        int success = onig_new(&_reg, cPattern, cPattern + strlen((char *)cPattern), options, ONIG_ENCODING_UTF8, ONIG_SYNTAX_RUBY, &einfo);
         if (success != ONIG_NORMAL) {
             *error = [NSError onigmo_errorWithCode:success];
             return nil;

@@ -24,4 +24,17 @@ class OnigmoTests: XCTestCase {
             XCTAssertEqual((error as NSError).localizedDescription, "invalid backref number/name")
         }
     }
+
+    func testHelloWorldRegex() {
+        do {
+            let regex = try OnigmoRegularExpression(pattern: "world(!?)", options: .FindLongest)
+            let matches = try regex.matchesInString("hello world!")
+            XCTAssertEqual(matches["0"]?.rangeValue.location, 6)
+            XCTAssertEqual(matches["0"]?.rangeValue.length, 5)
+            XCTAssertEqual(matches["1"]?.rangeValue.location, 11)
+            XCTAssertEqual(matches["1"]?.rangeValue.length, 1)
+        } catch {
+            XCTAssertNil(error)
+        }
+    }
 }
